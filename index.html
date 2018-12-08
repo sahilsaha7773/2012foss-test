@@ -28,6 +28,7 @@
     <link href="css/theme-lava.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="js/google-analytics.js"></script>
 </head>
@@ -299,7 +300,60 @@
                         <h1>Featured Designers</h1>
                     </div>
                 </div>
+                <script>
+                    
+	$(document).ready(function() {
+    var hiddenInfo = $(".hidden-info");
+    var hiddenInfo2 = $(".hidden-info2");
+    var hiddenInfo3 = $(".hidden-info3");
+    var hiddenInfo4 = $(".hidden-info4");    
+    var readMoreTrigger = $(".read-more-trigger");
+    var readMoreTrigger2 = $(".read-more-trigger-2");
+    var readMoreTrigger3 = $(".read-more-trigger-3");
+    var readMoreTrigger4 = $(".read-more-trigger-4");    
 
+		//hide div .hidden-info
+		hiddenInfo.hide();
+    hiddenInfo2.hide();
+	  readMoreTrigger.on("click", function(){
+		//toggle the hidden div
+	    hiddenInfo.toggle();
+			//toggle text in .hidden-info to 'Read Less', 'Read More'
+      if (readMoreTrigger.text() == "Read More")
+        readMoreTrigger.text("Read less");
+				else readMoreTrigger.text("Read More");
+    
+    });
+    readMoreTrigger2.on("click", function(){
+		//toggle the hidden div
+	    hiddenInfo2.toggle();
+			//toggle text in .hidden-info to 'Read Less', 'Read More'
+      if (readMoreTrigger2.text() == "Read More")
+        readMoreTrigger2.text("Read less");
+				else readMoreTrigger2.text("Read More");
+    
+    });
+         readMoreTrigger3.on("click", function(){
+		//toggle the hidden div
+	    hiddenInfo3.toggle();
+			//toggle text in .hidden-info to 'Read Less', 'Read More'
+      if (readMoreTrigger3.text() == "Read More")
+        readMoreTrigger3.text("Read less");
+				else readMoreTrigger3.text("Read More");
+    
+    });
+         readMoreTrigger4.on("click", function(){
+		//toggle the hidden div
+	    hiddenInfo4.toggle();
+			//toggle text in .hidden-info to 'Read Less', 'Read More'
+      if (readMoreTrigger4.text() == "Read More")
+        readMoreTrigger4.text("Read less");
+				else readMoreTrigger4.text("Read More");
+    
+    });
+    
+  });
+                </script>
                 <div class="row">
                     <div class="col-md-6 col-sm-12 speaker-outer">
                         <div class="speaker-with-bio">
@@ -330,13 +384,16 @@
                                     Free
                                     Software projects such as the Scribus desktop publishing software. He is
                                     projectleader
-                                    of FontMatrix, a font management system initiated in 2007. He works on the duo
+                                    of FontMatrix, a font management system initiated in
+                                    <div class="hidden-info">2007. He works on the duo
                                     Fonzie-Nancy,
                                     a scan-to-font application that allows a font based on several "drawings" by nature
                                     and
                                     recently LiteralDraw, an application that allows the exploration of the relation
                                     between
                                     drawing and code.</p>
+                                    </div>
+                            <h3 class="read-more-trigger-1">Read More</h3>
                             </div>
                         </div>
                     </div>
@@ -375,6 +432,7 @@
                                     interest
                                     for language, and how the latter is a tension between existing standards and new
                                     meanings.
+                                    <div class="hidden-info2">
                                     We've been trained as classical graphic designers in the Valence school of Fine
                                     ArtsFR
                                     from 2004 to 2006, where we developed a strong interest in media and writing
@@ -385,6 +443,8 @@
                                     programming
                                     skills to apply them to graphic design.</p>
                             </div>
+                            <h3 class="read-more-trigger-2">Read More</h3>
+                        </div>
                         </div>
                     </div>
 
@@ -423,6 +483,7 @@
                                     language,
                                     and how the latter is a tension between existing standards and new meanings. We've
                                     been
+                                    <div class="hidden-info3"
                                     trained as classical graphic designers in the Valence school of Fine ArtsFR from
                                     2004
                                     to 2006, where we developed a strong interest in media and writing theory. In 2009,
@@ -432,6 +493,8 @@
                                     We strengthen our research and theory practice along developing our programming
                                     skills
                                     to apply them to graphic design.</p>
+                            </div>
+                            <h3 class="read-more-trigger-3">Read More</h2>
                             </div>
                         </div>
                     </div>
@@ -464,6 +527,7 @@
                                     studio
                                     Mind The Gap in Beirut (Lebanon) in 1993 with Karl Bassil, working in duo with the
                                     illustrator/photographer/cartoon
+                                    <div class="hidden-info4"
                                     publisher Vincent Fortemps mainly for the Belgian cultural world. After founding
                                     Normal,
                                     a non-profit association, he currently drives his own studio Speculoos alongside
@@ -483,6 +547,8 @@
                                     Brussels. He collaborates with visual artists, including Honoré d’O, Patrick
                                     Corillon,
                                     Vincent Meessen.</p>
+                                     </div>
+                            <h3 class="read-more-trigger-4">Read More</h2>
                             </div>
                         </div>
                     </div>
